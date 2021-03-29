@@ -1,0 +1,11 @@
+
+//POST TEST
+curl  -d '{"name":"Bob", "email":"mail", "phone":"phonenumber", "skill_id":"1", "date":"2021-03-27T14:00"}'\ 
+-H "Content-Type: application/json" -X POST http://localhost:8080/landing/application
+
+//GET TEST
+curl http://localhost:8080/landing/applications
+
+
+//CONNECT TO POSTGRES SERVICE VIA psql
+docker-compose exec postgres psql -U hh -d interviewme
